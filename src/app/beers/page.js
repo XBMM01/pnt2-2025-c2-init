@@ -1,11 +1,10 @@
-import { beers } from "../data/mocs";
+import {beers} from "../data/mocs";
 import BeerList from "./components/BeerList";
 
 export default function BeersPage(){
-            
+    // TODO: Llamar a la API: https://raw.githubusercontent.com/ORT-PabloFernandez/PNTP2-REACT-EJEMPLO/main/src/data/Beers.json
+    
     return (
-        <div className="container">            
-            <BeerList beers={beers} />            
-        </div>
-    );
+        <BeerList beers={beers} />
+    )
 }
