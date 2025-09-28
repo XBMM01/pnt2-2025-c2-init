@@ -1,8 +1,9 @@
-import "./beers.css";
+import "./beers.css"; // importa los estilos
 
 export default function Beer({beer}){
     return (
-    <article className="beer-card">
+        //retorna el JSX siempre tiene que tener 1 contendor
+    <div className="beer-card"> 
       <div className="beer-image-container">
         {/* Usamos <img> simple para no configurar dominios remotos de next/image */}
         <img className="beer-image" src={beer.label} alt={beer.name} loading="lazy" />
@@ -23,6 +24,6 @@ export default function Beer({beer}){
         </button>
 
       </div>
-    </article>
+    </div>
   )
 }
